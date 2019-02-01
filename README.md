@@ -6,7 +6,7 @@
 All method are implement as categories, So it's easy to call on use, just remember to import them first, I recommend importing them in your base VC or views, so all the subclasses can save the trouble.
 
 # UIColorExtension
-![alt text](/ImageResources/UIColorExtension.png)
+![alt text](/ImageResources/UIColorExtensions.png)
 
 # UIImageExension
 ![alt text](/ImageResources/UIImageExtension.png)
