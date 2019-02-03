@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Set color as tint color
- @param tintColor The tint color
+ @param color The tint color
  */
 + (void)setTintColor:(UIColor *)color;
 
