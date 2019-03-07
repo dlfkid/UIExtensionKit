@@ -116,4 +116,17 @@
     return [UIImage imageWithCGImage:scaledImage]; // 黑白图片(到这里已经结束了)
 }
 
+- (UIImage *)imageWithTintColor:(UIColor *)color {
+    UIGraphicsBeginImageContextWithOptions(self.size,NO, self.scale);
+    CGContextRef context =UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, 0, self.size.height);
+    CGContextScaleCTM(context, 1, -1);
+    CGRect rect = CGRectMake(0, 0, self.size.width, self.size.height);
+    CGContextClipToMask(context, rect, self.CGImage);
+    UIRectFillUsingBlendMode(rect,kCGBlendModeNormal);
+    UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end

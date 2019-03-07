@@ -53,7 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)imageScaledFromImage:(UIImage *)image Size:(CGSize)size;
 
-
 /**
  Generate QRCodeImageFromString
 
@@ -61,6 +60,14 @@ NS_ASSUME_NONNULL_BEGIN
  @return QRCodeImage
  */
 + (UIImage *)generateQRCodeImageViewWithString:(NSString *)dataString;
+
+/**
+ To dye current image into given tint color
+
+ @param color TintColor
+ @return image converted to given tint color
+ */
+- (UIImage *)imageWithTintColor:(UIColor *)color;
 
 @end
 
