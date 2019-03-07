@@ -53,6 +53,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)imageScaledFromImage:(UIImage *)image Size:(CGSize)size;
 
+
+/**
+ Generate QRCodeImageFromString
+
+ @param dataString Data that going to be converted to QRCode in String
+ @return QRCodeImage
+ */
++ (UIImage *)generateQRCodeImageViewWithString:(NSString *)dataString;
+
 @end
 
 NS_ASSUME_NONNULL_END
