@@ -92,7 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param imageName image's name
  @return UIImage
  */
-- (UIImage*)loadImageFromSandBox:(NSString*)imageName;
++ (UIImage*)loadImageFromSandBox:(NSString*)imageName;
 
 @end
 

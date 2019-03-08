@@ -179,13 +179,9 @@
     [image writeToFile:[path stringByAppendingPathComponent:imageName] atomically:YES];
 }
 
-- (UIImage*)loadImageFromSandBox:(NSString*)imageName {
++ (UIImage*)loadImageFromSandBox:(NSString*)imageName {
     NSString *path = [[UIImage UIExtensionKitImagesFilePath] stringByAppendingPathComponent:imageName];
-    if ([[UIImage alloc] initWithContentsOfFile:path] != nil) {
-        return [[UIImage alloc] initWithContentsOfFile:path];
-    } else {
-        return nil;
-    }
+    return [[UIImage alloc] initWithContentsOfFile:path];
 }
 
 + (NSString *)UIExtensionKitImagesFilePath {
