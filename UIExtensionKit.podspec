@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "UIExtensionKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Practical method been used in UI Construction."
 
   # This description is used to generate tags and improve search results.
@@ -177,7 +177,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "LeonDeng" => "email@address.com" }
+  spec.author             = { "LeonDeng" => "dlfkid@icloud.com" }
   # Or just: spec.author    = "LeonDeng"
   # spec.authors            = { "LeonDeng" => "email@address.com" }
   # spec.social_media_url   = "https://twitter.com/LeonDeng"

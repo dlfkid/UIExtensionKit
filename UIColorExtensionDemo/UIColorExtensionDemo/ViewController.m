@@ -17,8 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSArray *array = @[@0, @1];
-    NSString *string = @"yes";
 }
 
 

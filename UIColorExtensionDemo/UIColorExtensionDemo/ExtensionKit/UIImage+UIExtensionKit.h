@@ -69,6 +69,31 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)imageWithTintColor:(UIColor *)color;
 
+/**
+ Convert current image into gray form
+
+ @return image with out color
+ */
+- (UIImage*)imageWithGrayScale;
+
+
+/**
+ Save given image into app's sandbox
+
+ @param image Image to be saved
+ @param imageName Image saved in name
+ */
+- (void)saveImageToSandBox:(NSData*)image withName:(NSString*)imageName;
+
+
+/**
+ Load image from sandBox
+
+ @param imageName image's name
+ @return UIImage
+ */
+- (UIImage*)loadImageFromSandBox:(NSString*)imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END
