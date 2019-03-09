@@ -188,8 +188,8 @@
     //需优化，不能每次都判断
     static dispatch_once_t onceToken;
     NSString* SaveMediaPath= [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"UIExtensionKitMediaFileLib"];
-    NSFileManager * fileManager = [NSFileManager defaultManager];
     dispatch_once(&onceToken, ^{
+        NSFileManager * fileManager = [NSFileManager defaultManager];
         if (![fileManager fileExistsAtPath:SaveMediaPath]) {
             [fileManager createDirectoryAtPath:SaveMediaPath withIntermediateDirectories:YES attributes:nil error:nil];
         }
