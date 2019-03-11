@@ -94,6 +94,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage*)loadImageFromSandBox:(NSString*)imageName;
 
+
+/**
+ Draw rounded corners to image and improve performance
+
+ @param radius corner radius
+ @param size image size
+ @return image with rounded corners
+ */
+- (UIImage*)drawRoundedCornerWithRadius:(CGFloat)radius Size:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
