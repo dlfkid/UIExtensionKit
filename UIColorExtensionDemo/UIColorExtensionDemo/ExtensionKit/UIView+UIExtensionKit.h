@@ -22,6 +22,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign ,readonly) CGFloat boundWidth;
 @property (nonatomic, assign ,readonly) CGFloat boundHeight;
 
+/// View will shake like app is going to been deleted in iOS
+/// @param angel angle
+- (void)tremble:(CGFloat)angle;
+/// Stop view from shaking
+- (void)stopTremble;
+
 @end
 
 NS_ASSUME_NONNULL_END
