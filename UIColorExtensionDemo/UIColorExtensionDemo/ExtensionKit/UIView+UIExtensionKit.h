@@ -10,6 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef NS_ENUM(NSInteger, ShadowPathSide) {
+    ShadowPathSideLeft,
+    ShadowPathSideRight,
+    ShadowPathSideTop,
+    ShadowPathSideBottom,
+    ShadowPathSideNoTop,
+    ShadowPathSideAllSide,
+};
+
 @interface UIView (UIExtensionKit)
 
 @property (nonatomic, assign, readonly) CGFloat frameX;
@@ -23,10 +32,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign ,readonly) CGFloat boundHeight;
 
 /// View will shake like app is going to been deleted in iOS
-/// @param angel angle
+/// @param angle angle
 - (void)tremble:(CGFloat)angle;
+
 /// Stop view from shaking
 - (void)stopTremble;
+
+/// Convenient Set Shadow
+/// @param shadowColor shadowColor
+/// @param shadowOpacity shadowOpacity
+/// @param shadowRadius shadowRadius
+/// @param shadowPathSide shadowPathSide
+/// @param shadowPathWidth shadowPathWidth
+- (void)setShadowPathWith:(UIColor *)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowSide:(ShadowPathSide)shadowPathSide shadowPathWidth:(CGFloat)shadowPathWidth;
 
 @end
 

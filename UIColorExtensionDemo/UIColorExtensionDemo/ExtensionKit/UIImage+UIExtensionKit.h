@@ -104,6 +104,23 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage*)drawRoundedCornerWithRadius:(CGFloat)radius Size:(CGSize)size;
 
+/**
+ Get color at point
+ 
+ @param point corner radius
+ @return color at given point
+ */
+- (UIColor *)colorAtPixel:(CGPoint)point;
+
+/**
+ Get image from bundle
+ 
+ @param imageName image name in bundle
+ @param bundleName name of the bundle
+ @return image from bundle
+ */
++ (UIImage *)imageWithName:(NSString *)imageName Bundle:(NSString *)bundleName;
+
 @end
 
 NS_ASSUME_NONNULL_END
