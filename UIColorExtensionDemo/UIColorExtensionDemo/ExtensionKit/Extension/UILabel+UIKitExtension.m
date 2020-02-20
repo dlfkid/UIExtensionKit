@@ -21,15 +21,13 @@
 }
 
 //获取单行文字宽度
-+ (CGFloat)textWidthWithText:(NSString *)text font:(UIFont *)font
-{
++ (CGFloat)textWidthWithText:(NSString *)text font:(UIFont *)font {
     CGSize textSize = [text boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil].size;
     return textSize.width;
 }
 
 //获取文字高度
-+ (CGFloat)textHeightWithText:(NSString *)text width:(CGFloat)width font:(UIFont *)font
-{
++ (CGFloat)textHeightWithText:(NSString *)text width:(CGFloat)width font:(UIFont *)font {
     if ([text isEqualToString:@""]) {
         return 0.0;
     } else {
@@ -39,9 +37,8 @@
 }
 
 //获取富文本高度
-+ (CGFloat)textHeightWithAttributedText:(NSAttributedString *)attributted Width:(CGFloat)width
-{
-    if(width<=0){
++ (CGFloat)textHeightWithAttributedText:(NSAttributedString *)attributted Width:(CGFloat)width {
+    if (width <= 0) {
         return 0.0;
     }
     

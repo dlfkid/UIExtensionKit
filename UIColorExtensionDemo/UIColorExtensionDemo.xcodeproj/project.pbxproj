@@ -18,6 +18,9 @@
 		3561D2BA2203E71E000491D2 /* UIColor+UIExtensionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3561D2B92203E71E000491D2 /* UIColor+UIExtensionKit.m */; };
 		3561D2BD2203E866000491D2 /* UIImage+UIExtensionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3561D2BC2203E866000491D2 /* UIImage+UIExtensionKit.m */; };
 		3561D2C02203ED1F000491D2 /* NSString+UIKitExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3561D2BF2203ED1F000491D2 /* NSString+UIKitExtension.m */; };
+		356C46FB23FE252A004DADD5 /* UIView+TrembleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 356C46FA23FE252A004DADD5 /* UIView+TrembleKit.m */; };
+		356C470323FE26C5004DADD5 /* UIView+PoppingKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 356C470223FE26C5004DADD5 /* UIView+PoppingKit.m */; };
+		359F2CEE23FE6AEB007EF3D7 /* UIView+BlinkKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 359F2CED23FE6AEB007EF3D7 /* UIView+BlinkKit.m */; };
 		35CFBEB522BA5D0E0003A40B /* UILabel+UIKitExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CFBEB422BA5D0E0003A40B /* UILabel+UIKitExtension.m */; };
 		B450373B2296F452008A5C90 /* UIView+UIExtensionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B450373A2296F452008A5C90 /* UIView+UIExtensionKit.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,12 @@
 		3561D2BC2203E866000491D2 /* UIImage+UIExtensionKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIExtensionKit.m"; sourceTree = "<group>"; };
 		3561D2BE2203ED1F000491D2 /* NSString+UIKitExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+UIKitExtension.h"; sourceTree = "<group>"; };
 		3561D2BF2203ED1F000491D2 /* NSString+UIKitExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+UIKitExtension.m"; sourceTree = "<group>"; };
+		356C46F923FE252A004DADD5 /* UIView+TrembleKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TrembleKit.h"; sourceTree = "<group>"; };
+		356C46FA23FE252A004DADD5 /* UIView+TrembleKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TrembleKit.m"; sourceTree = "<group>"; };
+		356C470123FE26C5004DADD5 /* UIView+PoppingKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PoppingKit.h"; sourceTree = "<group>"; };
+		356C470223FE26C5004DADD5 /* UIView+PoppingKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PoppingKit.m"; sourceTree = "<group>"; };
+		359F2CEC23FE6AEB007EF3D7 /* UIView+BlinkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+BlinkKit.h"; sourceTree = "<group>"; };
+		359F2CED23FE6AEB007EF3D7 /* UIView+BlinkKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+BlinkKit.m"; sourceTree = "<group>"; };
 		35CFBEB322BA5D0E0003A40B /* UILabel+UIKitExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+UIKitExtension.h"; sourceTree = "<group>"; };
 		35CFBEB422BA5D0E0003A40B /* UILabel+UIKitExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UIKitExtension.m"; sourceTree = "<group>"; };
 		B45037392296F452008A5C90 /* UIView+UIExtensionKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+UIExtensionKit.h"; sourceTree = "<group>"; };
@@ -151,6 +160,15 @@
 		3561D2B72203E6E9000491D2 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
+				356C46FF23FE2670004DADD5 /* Extension */,
+				356C470023FE267E004DADD5 /* Animation */,
+			);
+			path = ExtensionKit;
+			sourceTree = "<group>";
+		};
+		356C46FF23FE2670004DADD5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
 				B45037392296F452008A5C90 /* UIView+UIExtensionKit.h */,
 				B450373A2296F452008A5C90 /* UIView+UIExtensionKit.m */,
 				3561D2B82203E71E000491D2 /* UIColor+UIExtensionKit.h */,
@@ -162,7 +180,20 @@
 				35CFBEB322BA5D0E0003A40B /* UILabel+UIKitExtension.h */,
 				35CFBEB422BA5D0E0003A40B /* UILabel+UIKitExtension.m */,
 			);
-			path = ExtensionKit;
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		356C470023FE267E004DADD5 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				356C46F923FE252A004DADD5 /* UIView+TrembleKit.h */,
+				356C46FA23FE252A004DADD5 /* UIView+TrembleKit.m */,
+				356C470123FE26C5004DADD5 /* UIView+PoppingKit.h */,
+				356C470223FE26C5004DADD5 /* UIView+PoppingKit.m */,
+				359F2CEC23FE6AEB007EF3D7 /* UIView+BlinkKit.h */,
+				359F2CED23FE6AEB007EF3D7 /* UIView+BlinkKit.m */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +329,14 @@
 				B450373B2296F452008A5C90 /* UIView+UIExtensionKit.m in Sources */,
 				3561D2BD2203E866000491D2 /* UIImage+UIExtensionKit.m in Sources */,
 				3561D2792203DFB2000491D2 /* ViewController.m in Sources */,
+				359F2CEE23FE6AEB007EF3D7 /* UIView+BlinkKit.m in Sources */,
 				3561D2842203DFB2000491D2 /* main.m in Sources */,
+				356C46FB23FE252A004DADD5 /* UIView+TrembleKit.m in Sources */,
 				3561D2BA2203E71E000491D2 /* UIColor+UIExtensionKit.m in Sources */,
 				3561D2762203DFB2000491D2 /* AppDelegate.m in Sources */,
 				3561D2C02203ED1F000491D2 /* NSString+UIKitExtension.m in Sources */,
 				35CFBEB522BA5D0E0003A40B /* UILabel+UIKitExtension.m in Sources */,
+				356C470323FE26C5004DADD5 /* UIView+PoppingKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,7 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VSH7W5Y66V;
+				DEVELOPMENT_TEAM = NUVR7ZMN93;
 				INFOPLIST_FILE = UIColorExtensionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VSH7W5Y66V;
+				DEVELOPMENT_TEAM = NUVR7ZMN93;
 				INFOPLIST_FILE = UIColorExtensionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

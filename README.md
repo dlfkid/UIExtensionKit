@@ -1,6 +1,24 @@
+# 1.0.6 
+
+### AnimationKits
+
+1. Tremble
+
+2. Popping
+
+3. Blinking
+
+All animations above are configurable with parameters
+
 # UpdateLog
-### 2018-03-08
-1.Add More UIImage Category Methods:
+
+### 2020-02-20
+1. Fixed a bug that a method inside may override the system method
+
+2. Add animation features
+
+### 2019-03-08
+1. Add More UIImage Category Methods:
 ```
 + (UIImage *)generateQRCodeImageViewWithString:(NSString *)dataString;
 - (UIImage *)imageWithTintColor:(UIColor *)color;
@@ -10,7 +28,7 @@
 ```
 for more detail, check the description in UIImageExtension chapter below.
 
-2.Add CocoaPods installation compatible.
+2. Add CocoaPods installation compatible.
 
 # Installation 
 

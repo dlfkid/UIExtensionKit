@@ -31,13 +31,6 @@ typedef NS_ENUM(NSInteger, ShadowPathSide) {
 @property (nonatomic, assign ,readonly) CGFloat boundWidth;
 @property (nonatomic, assign ,readonly) CGFloat boundHeight;
 
-/// View will shake like app is going to been deleted in iOS
-/// @param angle angle
-- (void)tremble:(CGFloat)angle;
-
-/// Stop view from shaking
-- (void)stopTremble;
-
 /// Convenient Set Shadow
 /// @param shadowColor shadowColor
 /// @param shadowOpacity shadowOpacity

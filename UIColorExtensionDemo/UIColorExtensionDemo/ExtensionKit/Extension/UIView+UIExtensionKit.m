@@ -6,11 +6,7 @@
 //  Copyright © 2019 LeonDeng. All rights reserved.
 //
 
-#define angleToRandian(x)  ((x)/180.0*M_PI)
-
 #import "UIView+UIExtensionKit.h"
-
-static NSString * const kTrembleKey = @"com.tcl.home.animationKey.tremble";
 
 @implementation UIView (UIExtensionKit)
 
@@ -44,19 +40,6 @@ static NSString * const kTrembleKey = @"com.tcl.home.animationKey.tremble";
 
 - (CGFloat)boundHeight {
     return CGRectGetHeight(self.bounds);
-}
-
-- (void)tremble:(CGFloat)angle; {
-    CAKeyframeAnimation* anim=[CAKeyframeAnimation animation];
-    anim.keyPath=@"transform.rotation";
-    anim.values=@[@(angleToRandian(-angle)),@(angleToRandian(angle)),@(angleToRandian(-angle))];
-    anim.repeatCount=MAXFLOAT;
-    anim.duration=0.2;
-    [self.layer addAnimation:anim forKey:kTrembleKey];
-}
-
-- (void)stopTremble {
-    [self.layer removeAnimationForKey:kTrembleKey];
 }
 
 - (void)setShadowPathWith:(UIColor *)shadowColor shadowOpacity:(CGFloat)shadowOpacity shadowRadius:(CGFloat)shadowRadius shadowSide:(ShadowPathSide)shadowPathSide shadowPathWidth:(CGFloat)shadowPathWidth {

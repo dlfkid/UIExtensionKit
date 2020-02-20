@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param color TintColor
  @return image converted to given tint color
  */
-- (UIImage *)imageWithTintColor:(UIColor *)color;
+- (UIImage *)imageWithPureColor:(UIColor *)color;
 
 /**
  Convert current image into gray form

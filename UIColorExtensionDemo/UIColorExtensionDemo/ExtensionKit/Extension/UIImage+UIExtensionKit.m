@@ -116,7 +116,7 @@
     return [UIImage imageWithCGImage:scaledImage]; // 黑白图片(到这里已经结束了)
 }
 
-- (UIImage *)imageWithTintColor:(UIColor *)color {
+- (UIImage *)imageWithPureColor:(UIColor *)color {
     UIGraphicsBeginImageContextWithOptions(self.size,NO, self.scale);
     CGContextRef context =UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0, self.size.height);
