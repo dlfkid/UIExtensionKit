@@ -160,15 +160,6 @@
 		3561D2B72203E6E9000491D2 /* ExtensionKit */ = {
 			isa = PBXGroup;
 			children = (
-				356C46FF23FE2670004DADD5 /* Extension */,
-				356C470023FE267E004DADD5 /* Animation */,
-			);
-			path = ExtensionKit;
-			sourceTree = "<group>";
-		};
-		356C46FF23FE2670004DADD5 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
 				B45037392296F452008A5C90 /* UIView+UIExtensionKit.h */,
 				B450373A2296F452008A5C90 /* UIView+UIExtensionKit.m */,
 				3561D2B82203E71E000491D2 /* UIColor+UIExtensionKit.h */,
@@ -179,13 +170,6 @@
 				3561D2BF2203ED1F000491D2 /* NSString+UIKitExtension.m */,
 				35CFBEB322BA5D0E0003A40B /* UILabel+UIKitExtension.h */,
 				35CFBEB422BA5D0E0003A40B /* UILabel+UIKitExtension.m */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		356C470023FE267E004DADD5 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
 				356C46F923FE252A004DADD5 /* UIView+TrembleKit.h */,
 				356C46FA23FE252A004DADD5 /* UIView+TrembleKit.m */,
 				356C470123FE26C5004DADD5 /* UIView+PoppingKit.h */,
@@ -193,7 +177,7 @@
 				359F2CEC23FE6AEB007EF3D7 /* UIView+BlinkKit.h */,
 				359F2CED23FE6AEB007EF3D7 /* UIView+BlinkKit.m */,
 			);
-			path = Animation;
+			path = ExtensionKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
