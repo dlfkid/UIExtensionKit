@@ -12,6 +12,7 @@
 #import "UIView+PoppingKit.h"
 #import "UIView+TrembleKit.h"
 #import "UIView+BlinkKit.h"
+#import "NSString+UIKitExtension.h"
 
 @interface ViewController ()
 
@@ -35,6 +36,10 @@
     
     testView.backgroundColor = [UIColor redColor];
     
+    NSArray *testArray = @[@"A", @"B", @"C", @"D", @"E"];
+    
+    NSString *tempArraySting = [NSString stringWithArray:testArray Separator:@"=="];
+        
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 3 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         __weak UIView *weakView = testView;
         

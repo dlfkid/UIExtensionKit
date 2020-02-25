@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)hexStringWithString:(NSString *)string;
 
+/// return a string from sttring array that separated with separator.
+/// @param array string array
+/// @param separator separator
++ (NSString *)stringWithArray:(NSArray <NSString *> *)array Separator:(NSString *)separator;
+
 @end
 
 NS_ASSUME_NONNULL_END

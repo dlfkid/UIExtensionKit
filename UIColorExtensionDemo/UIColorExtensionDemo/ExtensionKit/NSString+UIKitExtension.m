@@ -46,4 +46,17 @@
     return hexStr;
 }
 
++ (NSString *)stringWithArray:(NSArray<NSString *> *)array Separator:(NSString *)separator {
+    
+    NSMutableString *tempString = [NSMutableString string];
+    
+    for (NSString *string in array) {
+        [tempString appendFormat:@"%@%@", string, separator];
+    }
+    
+    [tempString deleteCharactersInRange:NSMakeRange(tempString.length - separator.length, separator.length)];
+    
+    return [NSString stringWithString:tempString];
+}
+
 @end
